@@ -1,0 +1,15 @@
+@import "../../style/index";
+.primary-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1.25em;
+    font-family: 'Raleway' ,sans-serif;
+    padding: 0.875rem 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    
+    color: $lightpurple;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }

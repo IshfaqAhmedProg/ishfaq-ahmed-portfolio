@@ -1,0 +1,114 @@
+@import "../../style/index";
+.toolcard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2.9375rem 2.5rem;
+  
+  width: max-content;
+  position: relative;
+  
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  transition: transform 300ms ease-in-out;
+
+  &-bg{
+    @include absoluteP;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0.9375rem;
+    z-index: -2;
+
+    transition: transform 300ms ease-in-out;
+
+    &-overlay{
+      height: 100%;
+      width: 100%;
+      background-image: $toolcardoverlay;
+    }
+  }
+  &-logo {
+    // outline: 1px solid blue;
+    margin-top: 2.9375em;
+    
+    height: min-content;
+    width: min-content;
+
+    transition: transform 300ms ease-in-out;
+
+    img{
+      
+      height:4.3125rem;
+    }
+
+  }
+  &-heading {
+    // outline: 1px solid red;
+    margin-top: 1.3125em;
+    
+    height: min-content;
+    width: min-content;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+
+    transition: all 300ms ease-in-out;
+
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2.3125em;
+
+    opacity: 0;
+
+    transition: opacity 300ms ease-in-out;
+    &-body{
+      padding: 0 2.1875em;
+      width:22.25rem;
+
+      @include paragraph1;
+      text-align: center;
+      color: $lightpurple;
+      display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+    }
+    &-button {
+      margin: 2.75rem 0 2.9375rem 0;
+    }
+  }
+
+/*----------------------------HOVER CODES-------------------------------*/
+  & .currentSlide, &:hover{
+    transform: scale(1.1,1.1);
+  }
+  & .currentSlide, &:hover &-bg{
+    transform: scale(1.3,1.3);
+    filter: blur(2px);
+    -webkit-filter: blur(2px) brightness(1.1);
+
+  }
+  & .currentSlide, &:hover &-logo{
+    transform:  scale(0.8);
+    filter: brightness(0) saturate(100%) invert(71%) sepia(81%) saturate(1982%) hue-rotate(174deg) brightness(88%) contrast(97%);
+    mix-blend-mode: multiply;
+
+  }
+  & .currentSlide, &:hover &-heading{
+    transform:scale(1.2);
+    color: $blue;
+    mix-blend-mode: multiply;
+  }
+  & .currentSlide, &:hover &-content{
+    opacity: 1;
+  }
+}
