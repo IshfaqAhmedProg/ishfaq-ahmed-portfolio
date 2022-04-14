@@ -10,10 +10,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className='toot'>
-      <ToolsCard cardID='after-effects'/>
-      <ToolsCard cardID='blender'/>
-      </div>
       <ToolsCardCarousel></ToolsCardCarousel>
     </div>
   )
