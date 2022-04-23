@@ -1,5 +1,4 @@
 import React from "react";
-import './arrow.scss';
 import Arrow from '../../assets/Icons/prevArrow.svg'
 
 function PrevArrow(props) {
