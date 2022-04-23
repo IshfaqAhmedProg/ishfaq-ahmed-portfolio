@@ -1,10 +1,17 @@
-$white: #ffff;
-$lightblue: #80FFDB;
-$mediumblue: #56CFE1;
-$blue:#4EA8DE;
-$lightpurple:#5E60CE;
-$purple:#7400B8;
-$gradientlight:linear-gradient(180deg, #80FEF7 0%, #48BFE3 100%);
-$gradientmedium:linear-gradient(180deg, #9799FF 0%, #8BDEF8 100%);
-$gradientdarkq:linear-gradient(180deg, #5E60CE 0%, #7400B8 100%);
-$toolcardoverlay:linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, #4EA8DE 100%); 
+    $white: #ffff;
+    $gray1:#AEAEAE;
+    $gray2:#4E4E4E;
+    $gray3:#2E2E2E;
+    $lightblue: #80FFDB;
+    $mediumblue: #56CFE1;
+    $blue:#4EA8DE;
+    $lightpurple:#5E60CE;
+    $purple:#7400B8;
+    $gradientlight:linear-gradient(180deg, #80FEF7 0%, #48BFE3 100%);
+    $gradientmedium:linear-gradient(180deg, #9799FF 0%, #8BDEF8 100%);
+    $gradientdarkq:linear-gradient(180deg, #5E60CE 0%, #7400B8 100%);
+
+    $toolcardoverlay:linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, #4EA8DE 100%);
+    $toolcardtextbg:radial-gradient(50% 49.64% at 50% 50.36%, #FFFFFF 29.17%, rgba(255, 255, 255, 0) 100%);
+    $toolcardcarouseloverlay:linear-gradient(90deg, #FFFFFF 36.46%, rgba(255, 255, 255, 0) 100%); 
+    $toolcardcarouseloverlaydark:linear-gradient(90deg, #2E2E2E 41.67%, rgba(46, 46, 46, 0.645669) 76.56%, rgba(46, 46, 46, 0) 100%);

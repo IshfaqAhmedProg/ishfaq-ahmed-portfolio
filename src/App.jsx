@@ -6,8 +6,6 @@ import VideoCard from './components/VideoCard/videoCard'
 import ToolsCardCarousel from './components/CardCarousel/toolsCardCarousel'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
       <ToolsCardCarousel></ToolsCardCarousel>
