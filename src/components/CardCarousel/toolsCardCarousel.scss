@@ -40,6 +40,11 @@
 		padding: 0 0;
       	box-sizing: border-box;
     }
-    .slic-prev{}
+    .slick-prev{
+      left: 25px;
+    }
+    .slick-next{
+      right: 25px;
+    }
   }
 }

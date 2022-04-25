@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <ToolsCardCarousel></ToolsCardCarousel>
+      <VideoCard></VideoCard>
     </div>
   )
 }
