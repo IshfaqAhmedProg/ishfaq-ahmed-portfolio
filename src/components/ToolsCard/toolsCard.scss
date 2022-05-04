@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin: 2.9375rem;
 
   width: max-content;
@@ -23,7 +22,6 @@
     @include absoluteP;
     width: 100%;
     height: 100%;
-
     border-radius: 0.9375rem;
     z-index: -2;
 

@@ -17,6 +17,9 @@
       @include darklightselector(dark) {
         background: $toolcardcarouseloverlaydark;
       }
+      & .dark-mode{
+        background: $toolcardcarouseloverlaydark;
+      }
     }
     &-right {
       pointer-events: all;

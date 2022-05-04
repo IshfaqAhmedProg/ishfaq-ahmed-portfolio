@@ -4,6 +4,9 @@ body {
   @include darklightselector(dark){
     background: $gray3;
   }
+  & .dark-mode{
+    background: $gray3;
+  }
   margin: 0;
   font-family: 'Montserrat','Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

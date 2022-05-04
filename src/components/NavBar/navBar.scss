@@ -1,0 +1,49 @@
+@import "../../style/index";
+.navbar {
+  &-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: $white;
+    @include darklightselector(dark){
+        background: $gray2;
+    }
+    & .dark-mode{
+        background: $gray2;
+    }
+    box-shadow: 0rem .25rem .9375rem -0.5rem rgba(0, 0, 0, 0.25);
+  }
+  &-logo {
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &-menu {
+    &-list {
+      margin-block: 2.125rem;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      &-element {
+        margin-inline: 16px;
+        & a {
+          font-family: 'Montserrat',sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size:clamp(0.83vw,1em,16px);
+          line-height: 1.25rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: $gradientmedium;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+    }
+  }
+}

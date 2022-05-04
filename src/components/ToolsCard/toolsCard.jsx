@@ -1,6 +1,6 @@
 import React from "react";
-import PrimaryButton from "../Buttons/primaryButton";
 import "../ToolsCard/toolsCard.scss";
+import PrimaryButton from "../Buttons/primaryButton";
 import Images from "../Images";
 import Descriptions from "../Descriptions";
 
