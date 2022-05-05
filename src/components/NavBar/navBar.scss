@@ -16,6 +16,7 @@
     box-shadow: 0rem .25rem .9375rem -0.5rem rgba(0, 0, 0, 0.25);
   }
   &-logo {
+    margin-block: 1rem;
     & img {
       max-width: 100%;
       height: auto;
@@ -23,12 +24,11 @@
   }
   &-menu {
     &-list {
-      margin-block: 2.125rem;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      list-style: none;
+      padding:0;
+      margin: 0;
+      list-style-type: none;
       &-element {
+        float: left;
         margin-inline: 16px;
         & a {
           font-family: 'Montserrat',sans-serif;
@@ -44,6 +44,52 @@
           background-clip: text;
         }
       }
+    }
+  }
+  &-hamburger{
+    display: none;
+    
+  }
+  @media screen and (max-width: 810px) {
+    &-container{
+      justify-content: space-between;
+      padding-inline: 2.5rem;
+      position: relative;
+    }
+    &-logo{
+      & img {
+        max-width: 60%;
+        height: auto;
+      }
+    }
+    &-menu{
+      display: flex;
+      justify-content: center;
+      @include absoluteP;
+      height: fit-content;
+      z-index: -1;
+      background-color: $white;
+    box-shadow: 0rem .25rem .9375rem -0.5rem rgba(0, 0, 0, 0.25);
+    transition: transform 300ms ease-in-out;
+      transform: translateY(-100%);
+      &.opened{
+        transform: translateY(35%);
+      }
+      &-list{
+        &-element{
+          display: flex;
+          justify-content: center;
+          margin-inline: 0;
+          margin-block:1rem;
+          float:none;
+        }
+      }
+    }
+    &-toggle{
+      display: none;
+    }
+    &-hamburger {
+      display: block;
     }
   }
 }

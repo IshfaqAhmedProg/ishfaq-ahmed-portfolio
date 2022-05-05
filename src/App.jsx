@@ -9,8 +9,15 @@ import Hero from './sections/Hero/Hero'
 function App() {
   return (
     <>
-      
-      <Hero></Hero>
+      <div id='Landing_Page'>
+        <Hero></Hero>
+      </div>
+      <div id="Navbar">
+        <Navbar></Navbar>
+      </div>
+      <div id='About_Me'>
+        
+      </div>
       {/* <VideoCard></VideoCard>
 <ToolsCardCarousel></ToolsCardCarousel> */}
     </>
