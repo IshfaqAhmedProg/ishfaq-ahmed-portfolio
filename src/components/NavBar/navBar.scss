@@ -7,13 +7,13 @@
     align-items: center;
     width: 100%;
     background: $white;
-    @include darklightselector(dark){
-        background: $gray2;
+    @include darklightselector(dark) {
+      background: $gray2;
     }
-    & .dark-mode{
-        background: $gray2;
+    & .dark-mode {
+      background: $gray2;
     }
-    box-shadow: 0rem .25rem .9375rem -0.5rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0rem 0.25rem 0.9375rem -0.5rem rgba(0, 0, 0, 0.25);
   }
   &-logo {
     margin-block: 1rem;
@@ -24,17 +24,17 @@
   }
   &-menu {
     &-list {
-      padding:0;
+      padding: 0;
       margin: 0;
       list-style-type: none;
       &-element {
         float: left;
         margin-inline: 16px;
         & a {
-          font-family: 'Montserrat',sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-style: normal;
           font-weight: 600;
-          font-size:clamp(0.83vw,1em,16px);
+          font-size: clamp(0.83vw, 1em, 16px);
           line-height: 1.25rem;
           text-transform: uppercase;
           text-decoration: none;
@@ -46,46 +46,46 @@
       }
     }
   }
-  &-hamburger{
+  &-hamburger {
     display: none;
-    
   }
+/*-----------MEDIA QUERIES--------------------*/
   @media screen and (max-width: 810px) {
-    &-container{
+    &-container {
       justify-content: space-between;
       padding-inline: 2.5rem;
       position: relative;
     }
-    &-logo{
+    &-logo {
       & img {
         max-width: 60%;
         height: auto;
       }
     }
-    &-menu{
+    &-menu {
       display: flex;
       justify-content: center;
       @include absoluteP;
       height: fit-content;
       z-index: -1;
       background-color: $white;
-    box-shadow: 0rem .25rem .9375rem -0.5rem rgba(0, 0, 0, 0.25);
-    transition: transform 300ms ease-in-out;
+      box-shadow: 0rem 0.25rem 0.9375rem -0.5rem rgba(0, 0, 0, 0.25);
+      transition: transform 300ms ease-in-out;
       transform: translateY(-100%);
-      &.opened{
-        transform: translateY(35%);
+      &.opened {
+        transform: translateY(20%);
       }
-      &-list{
-        &-element{
+      &-list {
+        &-element {
           display: flex;
           justify-content: center;
           margin-inline: 0;
-          margin-block:1rem;
-          float:none;
+          margin-block: 2rem;
+          float: none;
         }
       }
     }
-    &-toggle{
+    &-toggle {
       display: none;
     }
     &-hamburger {
