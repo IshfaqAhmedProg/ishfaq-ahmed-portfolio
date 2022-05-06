@@ -18,14 +18,14 @@ function ToolsCardCarousel() {
     dots: false,
     slidesToShow: 5,
     slidesToScroll: 1,
-    speed: 500,
+    speed:1000,
     arrows: true,
     centerPadding: "0",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     pauseOnHover: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     cssEase: "ease-in-out",
     responsive: [
       {
@@ -67,12 +67,10 @@ function ToolsCardCarousel() {
   return (
     <div className="toolsCardCarousel-container">
       <div className="toolsCardCarousel-container-gradient">
-        <div className="toolsCardCarousel-container-gradient-left">
-          
-        </div>
-        <div className="toolsCardCarousel-container-gradient-right">
-
-        </div>
+        <span className="toolsCardCarousel-container-gradient-left">          
+        </span>
+        <span className="toolsCardCarousel-container-gradient-right">
+        </span>
       </div>
       <Slider {...settings}>
         <ToolsCard

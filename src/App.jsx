@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import logo from './logo.svg'
 import './App.scss'
 import ToolsCard from './components/ToolsCard/toolsCard'
 import VideoCard from './components/VideoCard/videoCard'
@@ -16,7 +15,7 @@ function App() {
         <Navbar></Navbar>
       </div>
       <div id='About_Me'>
-        
+        <ToolsCardCarousel></ToolsCardCarousel>
       </div>
       {/* <VideoCard></VideoCard>
 <ToolsCardCarousel></ToolsCardCarousel> */}
