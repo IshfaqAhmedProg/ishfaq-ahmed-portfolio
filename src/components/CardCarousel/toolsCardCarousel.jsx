@@ -66,6 +66,11 @@ function ToolsCardCarousel() {
   };
   return (
     <div className="toolsCardCarousel-container">
+      <div className="toolsCardCarousel-container-title">
+        <h1>
+          Tools
+        </h1>
+        </div> 
       <div className="toolsCardCarousel-container-gradient">
         <span className="toolsCardCarousel-container-gradient-left">          
         </span>

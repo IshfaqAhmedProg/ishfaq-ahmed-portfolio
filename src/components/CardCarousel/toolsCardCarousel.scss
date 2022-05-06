@@ -3,6 +3,21 @@
 .toolsCardCarousel-container {
   width: 100vw;
   position: relative;
+  &-title {
+    @include position(absolute, 0, 0, 0, 15%);
+    z-index: 4;
+    width: fit-content;
+    height: fit-content;
+    & h1 {
+      @include heading1;
+      background: linear-gradient(180deg, #5e60ce 0%, #7400b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      opacity: 0.6;
+    }
+  }
   &-gradient {
     display: flex;
     justify-content: space-between;
@@ -17,7 +32,7 @@
       @include darklightselector(dark) {
         background: $toolcardcarouseloverlaydark;
       }
-      & .dark-mode{
+      & .dark-mode {
         background: $toolcardcarouseloverlaydark;
       }
     }
@@ -32,21 +47,21 @@
     }
   }
   @media only screen and (max-width: 650px) {
-	&-gradient{
-		display: none;
-	}
-	}
+    &-gradient {
+      display: none;
+    }
+  }
   .toolsCardCarousel {
     .slick-slide {
-		display: flex;
-		justify-content: center;
-		padding: 0 0;
-      	box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      padding: 0 0;
+      box-sizing: border-box;
     }
-    .slick-prev{
+    .slick-prev {
       left: 25px;
     }
-    .slick-next{
+    .slick-next {
       right: 25px;
     }
   }

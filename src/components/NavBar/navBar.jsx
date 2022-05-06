@@ -1,7 +1,7 @@
 import React from "react";
 import "../NavBar/navBar.scss";
 import Images from "../Images";
-import DarkLightToggle from "./darkLightToggle";
+import DarkLightToggle from "./DarkLightToggle/darkLightToggle";
 import HamburgerIcon from "./HamburgerIcon/hamburgerIcon";
 
 function Navbar() {

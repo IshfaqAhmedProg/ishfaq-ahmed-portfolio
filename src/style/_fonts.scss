@@ -1,6 +1,9 @@
 @mixin heading1 {
-    font-weight: 250;
+    font-weight: 100;
 font-size: 5em;
+line-height: 77.9%;
+text-align: center;
+text-transform: uppercase;
 }
 @mixin heading2 {
     font-weight: 700;
