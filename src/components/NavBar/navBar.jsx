@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../NavBar/navBar.scss";
 import Images from "../Images";
 import DarkLightToggle from "./DarkLightToggle/darkLightToggle";
@@ -6,7 +6,7 @@ import HamburgerIcon from "./HamburgerIcon/hamburgerIcon";
 
 function Navbar() {
   return (
-    <div className="navbar-container" id="Navbar">
+    <div className="navbar-container">
       <div className="navbar-logo">
         <img src={Images.iamlogo} alt="ishfaq ahmed logo" />
       </div>

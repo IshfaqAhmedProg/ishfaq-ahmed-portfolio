@@ -1,26 +1,40 @@
-import { useState } from 'react'
-import './App.scss'
-import ToolsCard from './components/ToolsCard/toolsCard'
-import VideoCard from './components/VideoCard/videoCard'
-import ToolsCardCarousel from './components/CardCarousel/toolsCardCarousel'
-import Navbar from './components/NavBar/navBar'
-import Hero from './sections/Hero/Hero'
+import React, { useState, useEffect } from "react";
+import "./App.scss";
+import ToolsCard from "./components/ToolsCard/toolsCard";
+import VideoCard from "./components/VideoCard/videoCard";
+import ToolsCardCarousel from "./components/CardCarousel/toolsCardCarousel";
+import Navbar from "./components/NavBar/navBar";
+import Hero from "./sections/Hero/Hero";
 function App() {
+  const [sticky, setSticky] = useState('');
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
+    };
+  },[]);
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      let lpHeight=document.getElementById('Landing_Page').offsetHeight;
+      windowHeight > lpHeight ? setSticky('sticky') : setSticky('');
+    }
+  };
   return (
     <>
-      <div id='Landing_Page'>
+      <section id="Landing_Page">
         <Hero></Hero>
-      </div>
-      <div id="Navbar">
+      </section>
+      <section id="Navbar" className={sticky}>
         <Navbar></Navbar>
-      </div>
-      <div id='About_Me'>
+      </section>
+      <section id="About_Me">
         <ToolsCardCarousel></ToolsCardCarousel>
-      </div>
-      {/* <VideoCard></VideoCard>
-<ToolsCardCarousel></ToolsCardCarousel> */}
+        <ToolsCardCarousel></ToolsCardCarousel>
+        <ToolsCardCarousel></ToolsCardCarousel>
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

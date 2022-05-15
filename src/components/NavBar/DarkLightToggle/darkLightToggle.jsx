@@ -1,6 +1,8 @@
 import React from "react";
 import "./darkLightToggle.scss";
 import ToggleFunction from "./ToggleFunction";
+import Darktolightanim from './darktolightanim'
+import dtl from './darktolight2.svg'
 
 function DarkLightToggle() {
   return (
@@ -8,20 +10,9 @@ function DarkLightToggle() {
       <label className="switch">
         <input id="DLtoggle" type="checkbox" onChange={ToggleFunction}></input>
         <span className="slider"></span>
-        <span className="control"></span>
-
-        <span className="moon-blue"></span>
-        
-        <span className="white-circle"></span>
-
-        <span className="sun-spoke"></span>
-        <span className="sun-spoke"></span>
-        <span className="sun-spoke"></span>
-        <span className="sun-spoke"></span>
-        <span className="sun-spoke"></span>
-        <span className="sun-spoke"></span>
-        <span className="sun-spoke"></span>
-        <span className="sun-spoke"></span>
+        <span className="control">
+          <Darktolightanim/>
+        </span>
       </label>
     </div>
   );

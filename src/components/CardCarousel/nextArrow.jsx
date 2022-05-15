@@ -10,7 +10,7 @@ function NextArrow(props) {
       style={{ ...style, zIndex:3, display: "block",width:"9vw", maxWidth:"70px"}}
       onClick={onClick}
     >
-      <img src={Arrow} alt="Next Tool" />
+      <img className="arrows" src={Arrow} alt="Next Tool" />
     </div>
   );
 }

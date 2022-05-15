@@ -9,7 +9,7 @@ function PrevArrow(props) {
       style={{ ...style, zIndex:3, display: "block", width:"9vw", maxWidth:"70px"}}
       onClick={onClick}
     >
-      <img src={Arrow} alt="Previous Tool"/>
+      <img className="arrows" src={Arrow} alt="Previous Tool"/>
     </div>
   );
 }

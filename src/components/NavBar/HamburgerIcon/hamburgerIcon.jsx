@@ -4,13 +4,7 @@ function toggleHamburger(){
   var hamburger = document.getElementById("Hamburger_icon");
   hamburger.classList.toggle("open");
   var menu=document.getElementById("Navbar_menu");
-  if(menu.classList.contains("opened")){
-    menu.classList.remove("opened");
-  }
-  else
-  {
-    menu.classList.add("opened");
-  }
+  menu.classList.toggle('opened');
 }
 function HamburgerIcon() {
   return (

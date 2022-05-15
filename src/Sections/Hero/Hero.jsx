@@ -16,19 +16,19 @@ function Hero() {
           </h2>
         </div>
         <div className="hero-section-carousel">
-          <div className="hero-section-carousel-change_outer">
-            <div className="hero-section-carousel-change_inner">
-              <div className="hero-section-carousel-element">
+          <div className="hero-section-carousel-change-outer">
+            <div className="hero-section-carousel-change-inner">
+              <div className="hero-section-carousel-element" style={{"--order":1}}>
                 Motion <span>Graphics</span>
               </div>
-              <div className="hero-section-carousel-element">
+              <div className="hero-section-carousel-element" style={{"--order":2}}>
                 <span>Web</span> Developer
               </div>
-              <div className="hero-section-carousel-element">
+              <div className="hero-section-carousel-element" style={{"--order":3}}>
                 3D <span>Modeler</span>
               </div>
-              <div className="hero-section-carousel-element">Animator</div>
-              <div className="hero-section-carousel-element">Editor</div>
+              <div className="hero-section-carousel-element" style={{"--order":4}}>Animator</div>
+              <div className="hero-section-carousel-element" style={{"--order":5}}>Editor</div>
             </div>
           </div>
         </div>
