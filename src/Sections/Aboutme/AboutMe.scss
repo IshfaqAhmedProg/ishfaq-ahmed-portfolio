@@ -1,0 +1,46 @@
+@import "../../style/index";
+.aboutme {
+  &-section {
+    align-items: center;
+    padding: 5rem;
+    height: 100vh;
+    position: relative;
+  }
+  &-profile {
+    @include position(absolute, 0, 0, 0, -10%);
+
+    img {
+      width: 53.125em;
+      height: auto;
+      @include darklightselector(dark) {
+        // filter: brightness(300%);
+      }
+    }
+  }
+  &-details {
+    padding-inline: 2rem;
+    p {
+      @include paragraph1;
+    }
+  }
+  &-title {
+    h1 {
+      text-align: right;
+      @include heading1;
+      @include textgradient($gradientdarkq);
+      opacity: 0.6;
+      @include darklightselector(dark) {
+        @include textgradient($gradientlight);
+        opacity: 0.9;
+      }
+    }
+  }
+}
+.dark-mode {
+  .aboutme {
+    &-title {
+      @include textgradient($gradientlight);
+      opacity: 0.9;
+    }
+  }
+}

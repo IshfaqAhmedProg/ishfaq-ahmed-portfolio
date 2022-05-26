@@ -14,7 +14,15 @@ import illustrator from '../assets/logos/illustrator-logo.svg'
 import vs from '../assets/logos/vs-logo.svg'
 import zbrush from '../assets/logos/zbrush-logo.svg'
 import iamlogo from '../assets/logos/IAMLogo.svg'
+import selfpotrait from '../assets/images/selfpotrait.png'
+import notfound from '../assets/images/notfound.png'
+import pearsbw from '../assets/logos/pearsbw.svg'
+import sheraspacebw from '../assets/logos/sheraspacebw.svg'
+import yyvbw from '../assets/logos/yyventuresbw.svg'
+import yyv from '../assets/logos/yyv.svg'
+import sheraspace from '../assets/logos/sheraspace.svg'
+import pears from '../assets/logos/pears.svg'
 const Images={
-    bg1,bg2,bg3,bg4,bg5,bg6,bg7,landingpage,blender,figma,aftereffects,zbrush,vs,illustrator,photoshop,iamlogo
+    bg1,bg2,bg3,bg4,bg5,bg6,bg7,landingpage,blender,figma,aftereffects,zbrush,vs,illustrator,photoshop,iamlogo,selfpotrait,notfound,pearsbw,sheraspacebw,yyvbw,yyv,sheraspace,pears
 }
 export default Images;

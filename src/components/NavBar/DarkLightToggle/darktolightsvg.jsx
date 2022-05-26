@@ -1,13 +1,9 @@
 import React from "react";
-
-function toggleanim(){
-  var t=document.getElementById('darklight');
-  t.classList.toggle('toggled');
-}
+import '../DarkLightToggle/lightToDark.scss';
+import '../DarkLightToggle/darkToLight.scss';
 export default function Darktolightanim() {
   return (
-    // SVG part goes here
-    <svg onClick={toggleanim} id="darklight" viewBox="0 0 38 38" shapeRendering="geometricPrecision" textRendering="geometricPrecision">
+    <svg  id="darklightsvg" viewBox="0 0 38 38" shapeRendering="geometricPrecision" textRendering="geometricPrecision">
     <defs>
         <linearGradient id="untitled-bg-fill" x1="0.853554" y1="0.146446" x2="0.146446" y2="0.853554" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
             <stop id="untitled-bg-fill-0" offset="0%" stopColor="#9799ff"/>

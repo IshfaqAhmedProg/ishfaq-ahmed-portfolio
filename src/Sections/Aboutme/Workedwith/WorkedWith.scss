@@ -1,0 +1,41 @@
+@import "../../../style/index";
+
+.workedwith {
+  &-section {
+    @include displayflex(row);
+  }
+  &-title {
+    h1 {
+      @include heading1;
+      @include textgradient($gradientdarkq);
+      opacity: 0.6;
+      @include darklightselector(dark) {
+        @include textgradient($gradientlight);
+        opacity: 0.9;
+      }
+    }
+  }
+  &-list {
+    display: inline-flex;
+    &-element {
+      position: relative;
+      .companylogo {
+        &-bw {
+          @include absoluteP;
+          transition: opacity 50ms ease;
+          &:hover {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.dark-mode{
+    .workedwith{
+        &-title{
+            @include textgradient($gradientlight);
+            opacity: 0.9;
+        }
+    }
+}

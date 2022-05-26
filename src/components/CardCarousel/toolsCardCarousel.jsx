@@ -9,16 +9,26 @@ import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 
 function ToolsCardCarousel() {
+  const cardid = [
+    ["aftereffects",0],
+    ["photoshop",1],
+    ["figma",2],
+    ["illustrator",3],
+    ["vscode",4],
+    ["adobexd",5],
+    ["blender",6],
+    ["zbrush",7],
+  ]
   const [activeSlide, setActiveSlide] = useState(0);
   const settings = {
     className: "toolsCardCarousel",
-    draggable:false,
+    draggable: false,
     centerMode: true,
-    infinite:true,
+    infinite: true,
     dots: false,
     slidesToShow: 5,
     slidesToScroll: 1,
-    speed:1000,
+    speed: 1000,
     arrows: true,
     centerPadding: "0",
     nextArrow: <NextArrow />,
@@ -31,7 +41,7 @@ function ToolsCardCarousel() {
       {
         breakpoint: 1600,
         settings: {
-          centerMode:true,
+          centerMode: true,
           slidesToShow: 3,
           slidesToScroll: 1,
         },
@@ -39,7 +49,7 @@ function ToolsCardCarousel() {
       {
         breakpoint: 1200,
         settings: {
-          centerMode:true,
+          centerMode: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -49,7 +59,7 @@ function ToolsCardCarousel() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          draggable:true,
+          draggable: true,
         },
       },
       {
@@ -67,20 +77,21 @@ function ToolsCardCarousel() {
   return (
     <div className="toolsCardCarousel-container">
       <div className="toolsCardCarousel-container-title">
-        <h1>
-          Tools
-        </h1>
-        </div> 
+        <h1>Tools</h1>
+      </div>
       <div className="toolsCardCarousel-container-gradient">
-        <span className="toolsCardCarousel-container-gradient-left">          
-        </span>
-        <span className="toolsCardCarousel-container-gradient-right">
-        </span>
+        <span className="toolsCardCarousel-container-gradient-left"></span>
+        <span className="toolsCardCarousel-container-gradient-right"></span>
       </div>
       <Slider {...settings}>
-        <ToolsCard
+        {/* {cardid.map((item) => 
+          <ToolsCard cardID={item[0]} key={item[1]} active={activeSlide == item[1] ? "active" : ""}>
+          </ToolsCard>
+          
+      )} */}
+      <ToolsCard
           active={activeSlide == 0 ? "active" : ""}
-          cardID="after-effects"
+          cardID="aftereffects"
         ></ToolsCard>
 
         <ToolsCard
@@ -105,7 +116,7 @@ function ToolsCardCarousel() {
 
         <ToolsCard
           active={activeSlide == 5 ? "active" : ""}
-          cardID="adobe-xd"
+          cardID="adobexd"
         ></ToolsCard>
 
         <ToolsCard
@@ -115,7 +126,7 @@ function ToolsCardCarousel() {
 
         <ToolsCard
           active={activeSlide == 7 ? "active" : ""}
-          cardID="vs-code"
+          cardID="vscode"
         ></ToolsCard>
       </Slider>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./darkLightToggle.scss";
 import ToggleFunction from "./ToggleFunction";
-import Darktolightanim from './darktolightanim'
+import Darktolightanim from './darktolightsvg'
 import dtl from './darktolight2.svg'
 
 function DarkLightToggle() {

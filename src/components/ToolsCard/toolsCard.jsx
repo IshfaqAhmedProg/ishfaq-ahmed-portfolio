@@ -7,10 +7,10 @@ import Descriptions from "../Descriptions";
 var backgroundimage,title,logo,descp,gotolink = {};
 function ToolsCard(props) {
   switch (props.cardID) {
-    case "after-effects":
+    case "aftereffects":
         title="After Effects";
         logo=Images.aftereffects;
-        descp=Descriptions.AfterEffectsDesc;
+        descp=Descriptions.templateDesc;
         backgroundimage = {
           backgroundImage: "url(" + Images.bg1 + ")",
           backgroundSize: "cover",
@@ -19,7 +19,7 @@ function ToolsCard(props) {
     case "blender":
         title="Blender";
         logo=Images.blender;
-        descp=Descriptions.AfterEffectsDesc;
+        descp=Descriptions.templateDesc;
         backgroundimage = {
           backgroundImage: "url(" + Images.bg2 + ")",
           backgroundSize: "cover",
@@ -28,7 +28,7 @@ function ToolsCard(props) {
     case "photoshop":
         title="Photoshop";
         logo=Images.photoshop;
-        descp=Descriptions.AfterEffectsDesc;
+        descp=Descriptions.templateDesc;
         backgroundimage = {
           backgroundImage: "url(" + Images.bg3 + ")",
           backgroundSize: "cover",
@@ -37,7 +37,7 @@ function ToolsCard(props) {
     case "illustrator":
         title="Illustrator";
         logo=Images.illustrator;
-        descp=Descriptions.AfterEffectsDesc;
+        descp=Descriptions.templateDesc;
         backgroundimage = {
           backgroundImage: "url(" + Images.bg4 + ")",
           backgroundSize: "cover",
@@ -46,40 +46,47 @@ function ToolsCard(props) {
     case "zbrush":
         title="Z Brush";
         logo=Images.zbrush;
-        descp=Descriptions.AfterEffectsDesc;
+        descp=Descriptions.templateDesc;
         backgroundimage = {
           backgroundImage: "url(" + Images.bg5 + ")",
           backgroundSize: "cover",
         };
       break;
-    case "adobe-xd":
+    case "adobexd":
         title="Adobe XD";
         logo=Images.illustrator;
-        descp=Descriptions.AfterEffectsDesc;
+        descp=Descriptions.templateDesc;
         backgroundimage = {
           backgroundImage: "url(" + Images.bg6 + ")",
           backgroundSize: "cover",
         };
       break;
     case "figma":
+      logo=Images.figma;
         title="Figma";
-        logo=Images.figma;
-        descp=Descriptions.AfterEffectsDesc;
+        descp=Descriptions.templateDesc;
         backgroundimage = {
           backgroundImage: "url(" + Images.bg7 + ")",
           backgroundSize: "cover",
         };
       break;
-    case "vs-code":
+    case "vscode":
         title="VS Code";
         logo=Images.vs;
-        descp=Descriptions.AfterEffectsDesc;
+        descp=Descriptions.templateDesc;
         backgroundimage = {
           backgroundImage: "url(" + Images.bg4 + ")",
           backgroundSize: "cover",
         };
       break;
-    
+    default:
+      title="not found";
+      logo=Images.notfound;
+      descp=Descriptions.templateDesc;
+      backgroundimage = {
+        backgroundImage: "url(" + Images.bg4 + ")",
+        backgroundSize: "cover",
+      };
   }
 
   return (

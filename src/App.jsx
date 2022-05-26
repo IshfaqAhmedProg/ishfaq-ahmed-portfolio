@@ -5,6 +5,7 @@ import VideoCard from "./components/VideoCard/videoCard";
 import ToolsCardCarousel from "./components/CardCarousel/toolsCardCarousel";
 import Navbar from "./components/NavBar/navBar";
 import Hero from "./sections/Hero/Hero";
+import AboutMe from "./sections/Aboutme/AboutMe";
 function App() {
   const [sticky, setSticky] = useState('');
   useEffect(() => {
@@ -29,9 +30,9 @@ function App() {
         <Navbar></Navbar>
       </section>
       <section id="About_Me">
-        <ToolsCardCarousel></ToolsCardCarousel>
-        <ToolsCardCarousel></ToolsCardCarousel>
-        <ToolsCardCarousel></ToolsCardCarousel>
+        <AboutMe></AboutMe>
+       <ToolsCard/>
+       <ToolsCardCarousel/>
       </section>
     </>
   );

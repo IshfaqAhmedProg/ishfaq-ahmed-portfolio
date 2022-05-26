@@ -1,26 +1,45 @@
 @mixin darklightselector($scheme) {
-  
-    $darkscheme: "(prefers-color-scheme:dark)";  
-    $lightscheme: "(prefers-color-scheme:light)";  
-    @if $scheme == dark {
-      @media #{$darkscheme} { @content; }
+  $darkscheme: "(prefers-color-scheme:dark)";
+  $lightscheme: "(prefers-color-scheme:light)";
+  @if $scheme == dark {
+    @media #{$darkscheme} {
+      @content;
     }
-    @else if $scheme == light {
-      @media #{$lightscheme} { @content; }
+  } @else if $scheme == light {
+    @media #{$lightscheme} {
+      @content;
     }
-  
   }
-@mixin absoluteP {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;    
 }
-@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
-    position: $position;
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-    left: $left;
-  }
+@mixin absoluteP {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin displayflex($direction,$justify){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+@mixin textgradient($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

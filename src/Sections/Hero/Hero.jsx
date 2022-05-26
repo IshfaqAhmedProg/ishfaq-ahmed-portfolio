@@ -3,12 +3,8 @@ import "./Hero.scss";
 import Images from "../../components/Images";
 var landingpagebg = {};
 function Hero() {
-  landingpagebg = {
-    backgroundImage: "url(" + Images.landingpage + ")",
-    backgroundSize: "cover",
-  };
   return (
-    <div className="hero-section" style={landingpagebg}>
+    <div className="hero-section">
       <div className="hero-section-container">
         <div className="hero-section-title">
           <h2>

@@ -2,22 +2,17 @@
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
 }
 .navbar {
   &-container {
     z-index: 5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include displayflex(row,space-around);
     align-items: center;
     width: 100%;
     background: $white;
     @include darklightselector(dark) {
-      background: $gray2;
-    }
-    .dark-mode {
       background: $gray2;
     }
     box-shadow: 0rem 0.25rem 0.9375rem -0.5rem rgba(0, 0, 0, 0.25);
@@ -79,9 +74,6 @@
       @include darklightselector(dark) {
         background: $gray2;
       }
-      .dark-mode {
-        background: $gray2;
-      }
       box-shadow: 0rem 0.25rem 0.9375rem -0.5rem rgba(0, 0, 0, 0.25);
       transition: transform 300ms ease-in-out;
       transform: translateY(-100%);
@@ -103,6 +95,16 @@
     }
     &-hamburger {
       display: block;
+    }
+  }
+}
+.dark-mode{
+  .navbar{
+    &-container{
+      background: $gray2;
+    }
+    &-menu{
+      background: $gray2;
     }
   }
 }

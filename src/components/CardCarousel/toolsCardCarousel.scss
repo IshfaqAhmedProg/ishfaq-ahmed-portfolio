@@ -1,18 +1,18 @@
 @import "../../style/index";
-.arrows{
+.arrows {
   transition: all 250ms ease;
-  &:hover{
+  &:hover {
     filter: brightness(1.5) hue-rotate(10deg);
     opacity: 0.5;
     transform: scale(0.9);
   }
 }
 .toolsCardCarousel-container {
-  width: 100vw;
+  width: 100%;
   position: relative;
   @media only screen and (max-width: 1230px) {
-    &{
-      padding-top: 10%
+    & {
+      padding-top: 10%;
     }
   }
   &-title {
@@ -24,33 +24,19 @@
     height: fit-content;
     // outline: 1px solid red;
     @media only screen and (max-width: 1230px) {
-    &{
-      display: block;
-      padding-left: 0;
-    }     
-  }
+      & {
+        display: block;
+        padding-left:5vw;
+      }
+    }
     & h1 {
       @include heading1;
-      background: $gradientdarkq;
-      @include darklightselector(dark) {
-        background: $gradientmedium;
-        -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
-      }
-      &.dark-mode {
-        background: $gradientmedium;
-        -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
-      }
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
+      @include textgradient($gradientdarkq);
       opacity: 0.6;
+      @include darklightselector(dark) {
+        @include textgradient($gradientlight);
+        opacity: 0.9;
+      }
     }
   }
   &-gradient {
@@ -67,9 +53,7 @@
       @include darklightselector(dark) {
         background: $toolcardcarouseloverlaydark;
       }
-      &.dark-mode {
-        background: $toolcardcarouseloverlaydark;
-      }
+      
     }
     &-right {
       pointer-events: all;
@@ -98,6 +82,24 @@
     }
     .slick-next {
       right: 25px;
+    }
+  }
+}
+.dark-mode{
+  .toolsCardCarousel-container{
+    &-gradient{
+      &-left{
+        background: $toolcardcarouseloverlaydark;
+      }
+      &-right{
+        background: $toolcardcarouseloverlaydark;
+      }
+    }
+    &-title{
+      h1{
+        @include textgradient($gradientlight);
+        opacity: 0.9;
+      }
     }
   }
 }
