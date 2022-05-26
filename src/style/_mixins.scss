@@ -31,10 +31,11 @@
   bottom: $bottom;
   left: $left;
 }
-@mixin displayflex($direction,$justify){
+@mixin displayflex($direction:null,$justify:null,$alignitems:null){
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
+  align-items: $alignitems;
 }
 @mixin textgradient($gradient) {
   background: $gradient;

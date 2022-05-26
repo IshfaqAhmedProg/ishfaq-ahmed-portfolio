@@ -3,8 +3,8 @@ import React from 'react'
 var theme,
   prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 if (prefersDarkScheme.matches)
-  theme = document.body.classList.contains("light-mode") ? "light" : "dark";
-else theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+  theme = document.body.classList.contains("light-mode") ? "dark" : "light";
+else theme = document.body.classList.contains("dark-mode") ? "light" : "dark";
 localStorage.setItem("theme", theme);
 
 function ToggleFunction() {

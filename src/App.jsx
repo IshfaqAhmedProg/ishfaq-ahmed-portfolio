@@ -31,7 +31,6 @@ function App() {
       </section>
       <section id="About_Me">
         <AboutMe></AboutMe>
-       <ToolsCard/>
        <ToolsCardCarousel/>
       </section>
     </>
