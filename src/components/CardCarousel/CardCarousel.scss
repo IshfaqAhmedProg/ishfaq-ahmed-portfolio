@@ -7,7 +7,7 @@
     transform: scale(0.9);
   }
 }
-.toolsCardCarousel-container {
+.CardCarousel-container {
   width: 100%;
   position: relative;
   @media only screen and (max-width: 1230px) {
@@ -31,8 +31,8 @@
     }
     & h1 {
       @include heading1;
-      @include textgradient($gradientdarkq);
-      opacity: 0.6;
+      @include textgradient(var(--heading-color));
+      opacity: 0.8;
 
     }
   }
@@ -46,7 +46,7 @@
     &-left {
       pointer-events: all;
       width: 41vw;
-      background: $toolcardcarouseloverlay;
+      background:var(--carousel-overlay);
 
       
     }
@@ -54,7 +54,7 @@
       pointer-events: all;
       transform: rotate(180deg);
       width: 41vw;
-      background: $toolcardcarouseloverlay;
+      background:var(--carousel-overlay);
 
     }
   }
@@ -63,7 +63,7 @@
       display: none;
     }
   }
-  .toolsCardCarousel {
+  .CardCarousel {
     .slick-slide {
       display: flex;
       justify-content: center;
@@ -75,24 +75,6 @@
     }
     .slick-next {
       right: 25px;
-    }
-  }
-}
-.dark-mode{
-  .toolsCardCarousel-container{
-    &-gradient{
-      &-left{
-        background: $toolcardcarouseloverlaydark;
-      }
-      &-right{
-        background: $toolcardcarouseloverlaydark;
-      }
-    }
-    &-title{
-      h1{
-        @include textgradient($gradientlight);
-        opacity: 0.9;
-      }
     }
   }
 }

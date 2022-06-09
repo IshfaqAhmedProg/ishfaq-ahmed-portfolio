@@ -2,25 +2,31 @@
 :root {
   color-scheme: light;
   --background-color:white;
-  --heading-color: linear-gradient(180deg, #5e60ce 0%, #7400b8 100%);
+  --foreground-color:white;
+  --heading-color: linear-gradient(180deg, rgba(94, 96, 206,0.6) 0%, rgba(116, 0, 184,0.6) 100%);
   --paragraph-color: #5e60ce;
   --lp-color: #5e60ce;
   --branding-gradient: linear-gradient(180deg, #9799ff 0%, #8bdef8 100%);
+  --toolcard-overlay:linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, #4EA8DE 100%);
+  --carousel-overlay:linear-gradient(90deg, #FFFFFF 36.46%, rgba(255, 255, 255, 0) 100%); 
 }
 .darkmode {
   color-scheme: dark;
   --background-color:#2E2E2E;
+  --foreground-color:#4E4E4E;
   --heading-color: linear-gradient(180deg, #80FEF7 0%, #48BFE3 100%);
   --paragraph-color: white;
   --lp-color: #80FFDB;
   --branding-gradient: linear-gradient(180deg, #5E60CE 0%, #7400B8 100%);
+  --toolcard-overlay:linear-gradient(180deg, #5E60CE 0%, #7400B8 100%);
+  --carousel-overlay:linear-gradient(90deg, #2E2E2E 41.67%, rgba(46, 46, 46, 0.645669) 76.56%, rgba(46, 46, 46, 0) 100%);
 }
 body {
   background: var(--background-color);
   margin: 0;
   font-family: "Montserrat", "Raleway", -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+    "Droid Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

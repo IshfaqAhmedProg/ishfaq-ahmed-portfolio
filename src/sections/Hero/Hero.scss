@@ -11,7 +11,7 @@
 
   color: $white;
   text-transform: uppercase;
-  background: linear-gradient(to top, $white 0%, rgba(255, 255, 255, 0) 100%),url('../../assets/images/LandingPage.webp');
+  background: linear-gradient(to top, var(--foreground-color) 0%, rgba(255, 255, 255, 0) 100%),url('../../assets/images/LandingPage.webp');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -71,7 +71,7 @@
 }
 .dark-mode{
   .hero-section{
-    background: linear-gradient(to top, $gray2 0%, rgba(255, 255, 255, 0) 100%),url('../../assets/images/LandingPage.webp');
+    background: linear-gradient(to top, var(--foreground-color) 0%, rgba(255, 255, 255, 0) 100%),url('../../assets/images/LandingPage.webp');
     background-repeat: no-repeat;
     background-size: cover;
   }
