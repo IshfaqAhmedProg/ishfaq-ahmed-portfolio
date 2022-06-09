@@ -1,16 +1,3 @@
-@mixin darklightselector($scheme) {
-  $darkscheme: "(prefers-color-scheme:dark)";
-  $lightscheme: "(prefers-color-scheme:light)";
-  @if $scheme == dark {
-    @media #{$darkscheme} {
-      @content;
-    }
-  } @else if $scheme == light {
-    @media #{$lightscheme} {
-      @content;
-    }
-  }
-}
 @mixin absoluteP {
   position: absolute;
   top: 0;

@@ -12,9 +12,7 @@
     align-items: center;
     width: 100%;
     background: $white;
-    @include darklightselector(dark) {
-      background: $gray2;
-    }
+
     box-shadow: 0rem 0.25rem 0.9375rem -0.5rem rgba(0, 0, 0, 0.25);
   }
   &-logo {
@@ -70,10 +68,8 @@
       @include absoluteP;
       height: fit-content;
       z-index: -1;
-      background-color: $white;
-      @include darklightselector(dark) {
-        background: $gray2;
-      }
+      background-color: color(white);
+
       box-shadow: 0rem 0.25rem 0.9375rem -0.5rem rgba(0, 0, 0, 0.25);
       transition: transform 300ms ease-in-out, opacity 300ms ease-in;
       transform: translateY(-100%);

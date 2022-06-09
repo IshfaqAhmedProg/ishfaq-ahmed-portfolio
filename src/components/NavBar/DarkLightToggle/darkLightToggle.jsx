@@ -1,19 +1,39 @@
-import React from "react";
-import "./darkLightToggle.scss";
-import ToggleFunction from "./ToggleFunction";
-import Darktolightanim from './darktolightsvg'
-import dtl from './darktolight2.svg'
+import React, { useState } from "react";
+import DarkLightSVG from "./DarkLightIndex";
 
 function DarkLightToggle() {
+  let darkMode = localStorage.getItem("darkMode");
+  const [SVGmode, setSVGMode] = useState("");
+  const enableDarkMode = () => {
+    document.body.classList.add("darkmode");
+    localStorage.setItem("darkMode", "enabled");
+  };
+  const disableDarkMode = () => {
+    document.body.classList.remove("darkmode");
+    localStorage.setItem("darkMode", null);
+  };
+  //check if dark mode is enabled
+  const toggleMode = () => {
+    if (darkMode !== "enabled") {
+      // if disabled, turn ON
+      enableDarkMode();
+      setSVGMode("dark");
+    } else {
+      // if enabled, turn OFF
+      disableDarkMode();
+      setSVGMode("");
+    }
+  };
   return (
-    <div>
-      <label className="switch">
-        <input id="DLtoggle" type="checkbox" onChange={ToggleFunction}></input>
-        <span className="slider"></span>
-        <span className="control">
-          <Darktolightanim/>
-        </span>
-      </label>
+    <div className="darklight">
+      <button
+        onClick={toggleMode}
+        className="dark-mode-toggle"
+        id="dark-mode-toggle"
+        aria-label="enable dark mode"
+      >
+        <DarkLightSVG SVGmode={SVGmode} />
+      </button>
     </div>
   );
 }

@@ -1,46 +1,87 @@
 @import "../../style/index";
-.aboutme {
-  &-section {
-    align-items: center;
-    padding: 5rem;
-    height: 100vh;
-    position: relative;
-  }
-  &-profile {
-    @include position(absolute, 0, 0, 0, -10%);
-
-    img {
-      width: 53.125em;
-      height: auto;
-      @include darklightselector(dark) {
-        // filter: brightness(300%);
-      }
-    }
-  }
-  &-details {
-    padding-inline: 2rem;
-    p {
-      @include paragraph1;
-    }
-  }
-  &-title {
-    h1 {
-      text-align: right;
-      @include heading1;
-      @include textgradient($gradientdarkq);
-      opacity: 0.6;
-      @include darklightselector(dark) {
-        @include textgradient($gradientlight);
-        opacity: 0.9;
-      }
-    }
-  }
-}
+/*-----------DARK MODE--------------------*/
 .dark-mode {
   .aboutme {
     &-title {
       @include textgradient($gradientlight);
       opacity: 0.9;
     }
+    &-details{
+      color: $white;
+    }
   }
 }
+.aboutme {
+  &-section {
+    @include displayflex(column,center,center);
+    padding: 8rem 2rem;
+    height: max-content;
+    position: relative;
+  }
+  &-profile {
+    width: min-content;
+    height: min-content;
+    opacity: 0.5;
+    transition: opacity 300ms ease;
+    &:hover{
+      opacity: 1;
+    }
+    img {
+      width:clamp(350px,50vw,450px);
+      height: auto;
+    }
+  }
+  &-main{
+    @include displayflex(row,center,center);
+    left: -5%;
+    position: relative;
+  }
+  &-title {
+    @include position(absolute,0,-15%,0,0);
+    h1 {
+      text-align: right;
+      @include heading1;
+        @include textgradient($gradientdarkq);
+        opacity: 0.6;
+
+
+    }
+  }
+  &-details {
+    color: $lightpurple;
+
+    width:min(50vw, 35em);
+    p {
+      @include paragraph1;
+    }
+  }
+  /*-----------MEDIA QUERIES--------------------*/
+  @media screen and (max-width:1200px){
+    &-profile{
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+    &-main{
+      padding: 0 1rem;
+      @include displayflex(column,center,center);
+      left: 0;
+    }
+    &-title{
+      position: relative;
+      left: 0;
+      right: 0;
+      margin-block: 5rem;
+      h1{
+        text-align: center;
+      }
+    }
+    &-details{
+      width: 70%;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+

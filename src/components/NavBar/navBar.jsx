@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../NavBar/navBar.scss";
 import Images from "../Images";
-import DarkLightToggle from "./DarkLightToggle/darkLightToggle";
 import HamburgerIcon from "./HamburgerIcon/hamburgerIcon";
 
 function Navbar() {
@@ -28,7 +27,7 @@ function Navbar() {
       </div>
 
       <div className="navbar-toggle">
-        <DarkLightToggle />
+      {/* Add dark-light toggle here */}
       </div>
       <div className="navbar-hamburger">
         <HamburgerIcon />

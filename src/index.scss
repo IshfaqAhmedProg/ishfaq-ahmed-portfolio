@@ -1,49 +1,50 @@
-@import './style/index';
-/* :root{
-  --white:#{#ffff};
-
-  --gray-light:#{#AEAEAE};
-  --gray:#{#4E4E4E};
-  --gray-dark:#{#2E2E2E};
-  --blue-light:#{#80FFDB};
-  --blue-medium:#{#56CFE1};
-  --blue-dark:#{#4EA8DE};
-  --purple-dark:#{#5E60CE};
-} */
+@import "./style/index";
+:root {
+  color-scheme: light;
+  --background-color:white;
+  --heading-color: linear-gradient(180deg, #5e60ce 0%, #7400b8 100%);
+  --paragraph-color: #5e60ce;
+  --lp-color: #5e60ce;
+  --branding-gradient: linear-gradient(180deg, #9799ff 0%, #8bdef8 100%);
+}
+.darkmode {
+  color-scheme: dark;
+  --background-color:#2E2E2E;
+  --heading-color: linear-gradient(180deg, #80FEF7 0%, #48BFE3 100%);
+  --paragraph-color: white;
+  --lp-color: #80FFDB;
+  --branding-gradient: linear-gradient(180deg, #5E60CE 0%, #7400B8 100%);
+}
 body {
-  background: $white;
-  @include darklightselector(dark){
-    background: $gray3;
-  }
-  &.dark-mode{
-   background: $gray3; 
-  }
+  background: var(--background-color);
   margin: 0;
-  font-family: 'Montserrat','Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", "Raleway", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-*,*::after,*::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
-h1{
-  margin:0;
+h1 {
+  margin: 0;
 }
-h2{
-  margin:0;
+h2 {
+  margin: 0;
 }
-h3{
-  margin:0;
+h3 {
+  margin: 0;
 }
-h4{
-  margin:0;
+h4 {
+  margin: 0;
 }
-p{
-  margin:0;
+p {
+  margin: 0;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

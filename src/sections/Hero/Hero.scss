@@ -14,11 +14,7 @@
   background: linear-gradient(to top, $white 0%, rgba(255, 255, 255, 0) 100%),url('../../assets/images/LandingPage.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  @include darklightselector(dark){
-    background: linear-gradient(to top, $gray2 0%, rgba(255, 255, 255, 0) 100%),url('../../assets/images/LandingPage.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
   &-container {
     padding-right: 20vw;
     padding-left: 5vw;
@@ -32,9 +28,7 @@
     text-transform: uppercase;
     & span {
       color: $purple;
-      @include darklightselector(dark){
-        color: $lightblue;
-      }
+
     }
   }
   &-carousel {
@@ -73,5 +67,12 @@
     }
   }
   @media screen and (max-width: 1164px) {
+  }
+}
+.dark-mode{
+  .hero-section{
+    background: linear-gradient(to top, $gray2 0%, rgba(255, 255, 255, 0) 100%),url('../../assets/images/LandingPage.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

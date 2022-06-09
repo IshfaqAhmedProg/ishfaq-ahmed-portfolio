@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
-import ToolsCard from "./components/ToolsCard/toolsCard";
 import VideoCard from "./components/VideoCard/videoCard";
 import ToolsCardCarousel from "./components/CardCarousel/toolsCardCarousel";
 import Navbar from "./components/NavBar/navBar";
 import Hero from "./sections/Hero/Hero";
 import AboutMe from "./sections/Aboutme/AboutMe";
+import DarkLightToggle from "./components/NavBar/DarkLightToggle/darkLightToggle";
 function App() {
-  const [sticky, setSticky] = useState('');
+/*   const [sticky, setSticky] = useState('');
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
     return () => {
@@ -20,10 +20,11 @@ function App() {
       let lpHeight=document.getElementById('Landing_Page').offsetHeight;
       windowHeight > lpHeight ? setSticky('sticky') : setSticky('');
     }
-  };
+  }; */
   return (
     <>
-      <section id="Landing_Page">
+    <DarkLightToggle/>
+{/*       <section id="Landing_Page">
         <Hero></Hero>
       </section>
       <section id="Navbar" className={sticky}>
@@ -31,8 +32,9 @@ function App() {
       </section>
       <section id="About_Me">
         <AboutMe></AboutMe>
-       <ToolsCardCarousel/>
-      </section>
+
+       <VideoCard></VideoCard>
+      </section> */}
     </>
   );
 }

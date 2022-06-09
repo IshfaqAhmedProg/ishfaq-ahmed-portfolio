@@ -1,7 +1,7 @@
 import '../VideoCard/videoCard.scss'
 import VideoCardListElement from './videoCardListElement';
 import BGImages from '../Images';
-import CustomVideoPlayer from '../CustomVideoPlayer/customVideoPlayer';
+import ResponsivePlayer from '../ReponsivePlayer/ResponsivePlayer';
 function VideoCard() {
     return (
         <div className="videocard-container">
@@ -9,7 +9,7 @@ function VideoCard() {
                 <h2>Video Title</h2>
             </div>
             <div className="videocard-container-preview">
-                <CustomVideoPlayer url="https://www.youtube.com/watch?v=ysz5S6PUM-U"/>
+                <ResponsivePlayer></ResponsivePlayer>
             </div>
             <div className="videocard-container-list">
                 <VideoCardListElement name='nigga' time='16:00' source={BGImages.bg1} date='5/6/2020'/>

@@ -1,0 +1,67 @@
+@import "../../style/index";
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .player-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    &-play {
+      @include displayflex(column, center, center);
+      width: 100%;
+      height: 100%;
+      & span {
+        & #Play_Button {
+          width: 71px;
+        }
+        & #Pause_Button {
+          width: 71px;
+        }
+      }
+    }
+    &-bar {
+      position: relative;
+      @include displayflex(row, space-around, center);
+      padding-inline: 1rem;
+      &-play {
+        height: fit-content;
+        & span {
+          & #Play_Button {
+            width: 25px;
+          }
+          & #Pause_Button {
+            width: 25px;
+          }
+        }
+      }
+      & .progressbar {
+        width: 80%;
+      }
+      & .volumebar {
+        @include position(absolute,-165%,0);
+        transform: rotate(90deg);
+        width: 20%;
+      }
+    }
+  }
+}
+.invis-toggle {
+  & input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
