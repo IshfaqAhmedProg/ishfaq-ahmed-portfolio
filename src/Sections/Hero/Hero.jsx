@@ -12,21 +12,21 @@ function Hero() {
           </h2>
         </div>
         <div className="hero-section-carousel">
-          <div className="hero-section-carousel-change-outer">
-            <div className="hero-section-carousel-change-inner">
-              <div className="hero-section-carousel-element" style={{"--order":1}}>
-                Motion <span>Graphics</span>
-              </div>
-              <div className="hero-section-carousel-element" style={{"--order":2}}>
-                <span>Web</span> Developer
-              </div>
-              <div className="hero-section-carousel-element" style={{"--order":3}}>
-                3D <span>Modeler</span>
-              </div>
-              <div className="hero-section-carousel-element" style={{"--order":4}}>Animator</div>
-              <div className="hero-section-carousel-element" style={{"--order":5}}>Editor</div>
-            </div>
-          </div>
+          <ul className="hero-section-carousel-flip">
+            <li>Animator</li>
+            <li>
+              3D <span>Modeler</span>
+            </li>
+            <li>
+              UI/UX <span>Designer</span>
+            </li>
+            <li>
+              <span>Web</span> Developer
+            </li>
+            <li>
+              <span>Mo-Graph</span> Designer
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -5,7 +5,9 @@
   --foreground-color:white;
   --heading-color: linear-gradient(180deg, rgba(94, 96, 206,0.6) 0%, rgba(116, 0, 184,0.6) 100%);
   --paragraph-color: #5e60ce;
+  --lp-background:linear-gradient(180deg, rgba(0, 255, 240, 0) 47.4%, #FFFFFF 100%);
   --lp-color: #5e60ce;
+  --lp-gradient: linear-gradient(180deg, #9799ff 0%, #8bdef8 100%);
   --branding-gradient: linear-gradient(180deg, #9799ff 0%, #8bdef8 100%);
   --toolcard-overlay:linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, #4EA8DE 100%);
   --carousel-overlay:linear-gradient(90deg, #FFFFFF 36.46%, rgba(255, 255, 255, 0) 100%); 
@@ -13,10 +15,12 @@
 .darkmode {
   color-scheme: dark;
   --background-color:#2E2E2E;
-  --foreground-color:#4E4E4E;
+  --foreground-color:#373737;
   --heading-color: linear-gradient(180deg, #80FEF7 0%, #48BFE3 100%);
   --paragraph-color: white;
+  --lp-background:linear-gradient(180deg, rgba(116, 0, 184, 0) 0%, rgba(116, 0, 184, 0.16) 35.42%, #373737 100%);
   --lp-color: #80FFDB;
+  --lp-gradient:linear-gradient(180deg, rgba(94, 96, 206) 0%, rgba(116, 0, 184) 100%);
   --branding-gradient: linear-gradient(180deg, #5E60CE 0%, #7400B8 100%);
   --toolcard-overlay:linear-gradient(180deg, #5E60CE 0%, #7400B8 100%);
   --carousel-overlay:linear-gradient(90deg, #2E2E2E 41.67%, rgba(46, 46, 46, 0.645669) 76.56%, rgba(46, 46, 46, 0) 100%);
