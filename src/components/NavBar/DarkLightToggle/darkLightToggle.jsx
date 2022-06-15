@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DarkLightSVG from "./DarkLightIndex";
-
+import './DarkLightToggle.scss';
 function DarkLightToggle() {
   let darkMode = localStorage.getItem("darkMode");
   const [SVGmode, setSVGMode] = useState("");

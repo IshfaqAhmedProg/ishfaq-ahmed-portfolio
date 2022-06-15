@@ -1,0 +1,17 @@
+.darklight{
+    button{
+        background: none;
+        border: none;
+        height: 100%;
+        width: auto;
+        padding: 0;
+        transition: transform 300ms ease;
+        &:hover{
+            transform: scale(1.3);
+        }
+        svg{
+            width:35px;
+            height:35px;
+        }
+    }
+}

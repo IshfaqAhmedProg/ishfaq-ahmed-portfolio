@@ -1,16 +1,13 @@
 @import "../../style/index";
 /*-----------DARK MODE--------------------*/
-.dark-mode {
+/* .darkmode {
   .aboutme {
     &-title {
-      @include textgradient($gradientlight);
-      opacity: 0.9;
-    }
-    &-details{
-      color: $white;
+      @include textgradient(var(--heading-color));
+      opacity: 1;
     }
   }
-}
+} */
 .aboutme {
   &-section {
     @include displayflex(column,center,center);
@@ -41,14 +38,12 @@
     h1 {
       text-align: right;
       @include heading1;
-        @include textgradient($gradientdarkq);
-        opacity: 0.6;
-
-
+        @include textgradient(var(--heading-color));
+        opacity: 0.8;
     }
   }
   &-details {
-    color: $lightpurple;
+    color: var(--paragraph-color);
 
     width:min(50vw, 35em);
     p {

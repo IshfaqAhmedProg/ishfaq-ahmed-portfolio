@@ -9,8 +9,8 @@
   &-title {
     h1 {
       @include heading1;
-      @include textgradient($gradientdarkq);
-      opacity: 0.6;
+      @include textgradient(var(--heading-color));
+      opacity: 0.8;
       text-align: right;
 
     }
@@ -46,15 +46,6 @@
       &-element {
         margin-block: 2rem;
       }
-    }
-  }
-}
-  /*-----------DARK MODE--------------------*/
-.dark-mode {
-  .workedwith {
-    &-title {
-      @include textgradient($gradientlight);
-      opacity: 0.9;
     }
   }
 }
