@@ -1,13 +1,4 @@
 @import "../../style/index";
-/*-----------DARK MODE--------------------*/
-/* .darkmode {
-  .aboutme {
-    &-title {
-      @include textgradient(var(--heading-color));
-      opacity: 1;
-    }
-  }
-} */
 .aboutme {
   &-section {
     @include displayflex(column,center,center);

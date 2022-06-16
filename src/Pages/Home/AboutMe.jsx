@@ -1,7 +1,7 @@
 import React from "react";
 import Images from "../../components/Images";
-import "../Aboutme/AboutMe.scss";
-import WorkedWith from "./Workedwith/WorkedWith";
+import "./AboutMe.scss";
+import WorkedWith from "./WorkedWith";
 function AboutMe() {
   return (
     <div className="aboutme-section">

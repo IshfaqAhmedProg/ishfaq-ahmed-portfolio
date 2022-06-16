@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import Navbar from "../../components/NavBar/navBar";
-import AboutMe from '../../Sections/Aboutme/AboutMe'
-import Hero from '../../Sections/Hero/Hero'
+import AboutMe from './AboutMe'
+import Hero from './Hero'
 import CardCarousel from '../../components/CardCarousel/CardCarousel'
 import VideoCard from "../../components/VideoCard/videoCard";
 const Home = () => {

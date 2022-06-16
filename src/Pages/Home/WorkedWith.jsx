@@ -1,6 +1,6 @@
 import React from "react";
-import Images from "../../../components/Images";
-import '../Workedwith/WorkedWith.scss';
+import Images from "../../components/Images";
+import './WorkedWith.scss';
 function WorkedWith() {
   return (
     <div className="workedwith-section">
