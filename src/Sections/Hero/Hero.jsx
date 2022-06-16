@@ -13,7 +13,7 @@ function Hero() {
         </div>
         <div className="hero-section-carousel">
           <ul className="hero-section-carousel-flip">
-            <li>Animator</li>
+            <li>Illustrator</li>
             <li>
               3D <span>Modeler</span>
             </li>

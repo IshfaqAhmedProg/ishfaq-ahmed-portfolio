@@ -18,14 +18,20 @@
   &-container {
     padding-right: 20vw;
     padding-left: 5vw;
+    @media screen and (max-width:550px) {
+      padding-right: 0;
+      padding-left: 50vw;
+    }
   }
   &-title {
     display: flex;
     align-content: flex-end;
-    font-size: 3vw;
+    font-size:max(1.5ch, 3vw);
     line-height: 3.8125rem;
     letter-spacing: -0.07em;
     text-transform: uppercase;
+    min-width: 503px;
+    text-overflow: ellipsis;
     & span {
       color: var(--lp-color);
     }
@@ -39,6 +45,8 @@
     overflow: hidden;
     position: relative;
     height: 2ch;
+    min-width: 503px;
+    text-overflow: ellipsis;
     &-flip {
       list-style: none;
       padding: 0;
@@ -76,20 +84,18 @@
     margin-top: -3.5ch;
   }
   65% {
-    margin-top: -1.75ch;
+    margin-top: -1.7ch;
   } //20
   80% {
-    margin-top: -1.75ch;
+    margin-top: -1.7ch;
   }
   85% {
     margin-top: 0ch;
   } //0
-  99% {
+  100% {
     margin-top: 0ch;
   }
-  100% {
-    margin-top: -9ch;
-  }
+ 
 }
 
 .dark-mode {

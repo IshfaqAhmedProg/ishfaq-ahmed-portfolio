@@ -27,7 +27,7 @@ const Home = () => {
       <section id="Navbar" className={sticky}>
         <Navbar></Navbar>
       </section>
-      <section id="About_Me">
+      <section id="AboutMe">
         <AboutMe></AboutMe>
         <CardCarousel />
         <VideoCard></VideoCard>

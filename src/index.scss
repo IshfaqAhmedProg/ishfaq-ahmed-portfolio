@@ -1,4 +1,7 @@
 @import "./style/index";
+html{
+  scroll-behavior: smooth;
+}
 :root {
   color-scheme: light;
   --background-color:white;
@@ -7,7 +10,7 @@
   --paragraph-color: #5e60ce;
   --lp-background:linear-gradient(180deg, rgba(0, 255, 240, 0) 47.4%, #FFFFFF 100%);
   --lp-color: #5e60ce;
-  --lp-gradient: linear-gradient(0deg, #9799ff 0%, #8bdef8 100%);
+  --lp-gradient: linear-gradient(180deg, #5e60ce 0%, #8bdef8 100%);
   --branding-gradient: linear-gradient(180deg, #9799ff 0%, #8bdef8 100%);
   --toolcard-overlay:linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, #4EA8DE 100%);
   --carousel-overlay:linear-gradient(90deg, #FFFFFF 36.46%, rgba(255, 255, 255, 0) 100%); 
