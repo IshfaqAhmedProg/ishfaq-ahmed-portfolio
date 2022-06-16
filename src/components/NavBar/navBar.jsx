@@ -4,8 +4,6 @@ import Images from "../Images";
 import HamburgerIcon from "./HamburgerIcon/hamburgerIcon";
 import DarkLightToggle from "./DarkLightToggle/DarkLightToggle";
 import { Link } from "react-router-dom";
-import Gallery from "../../pages/Gallery/Gallery";
-import Home from "../../pages/Home/Home";
 
 function Navbar() {
   return (
@@ -36,7 +34,6 @@ function Navbar() {
       </div>
 
       <div className="navbar-toggle">
-        {/* Add dark-light toggle here */}
         <DarkLightToggle />
       </div>
       <div className="navbar-hamburger">

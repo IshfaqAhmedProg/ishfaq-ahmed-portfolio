@@ -2,11 +2,13 @@ import React from "react";
 import DarktolightSVG from "./DarktoLightAnim/DarktolightSVG";
 import LighttodarkSVG from "./LighttoDarkanim/LighttoDarkSVG";
 
-function DarkLightSVG(props) {
-  if (props.SVGmode == "dark") {
+function DarkLightSVG({SVGmode}) {
+  switch (SVGmode) {
+    case 'dark':
     return <DarktolightSVG></DarktolightSVG>;
-  } else{
+    default:
     return <LighttodarkSVG></LighttodarkSVG>;
+
   }
 }
 

@@ -76,7 +76,7 @@
       justify-content: center;
       @include absoluteP;
       height: fit-content;
-      z-index: -1;
+      z-index: -2;
       background-color: var(--foreground-color);
 
       box-shadow: 0rem 0.25rem 0.9375rem -0.5rem rgba(0, 0, 0, 0.25);
@@ -85,7 +85,7 @@
       opacity: 0;
       &.opened {
         opacity: 1;
-        transform: translateY(20%);
+        transform: translateY(16%);
       }
       &-list {
         &-element {
