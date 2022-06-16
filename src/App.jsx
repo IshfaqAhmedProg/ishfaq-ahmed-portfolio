@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
-import DevHelp from "./Pages/DevHelp/DevHelp";
-import Gallery from "./Pages/Gallery/Gallery";
-import Home from "./Pages/Home/Home";
+import DevHelp from "./pages/DevHelp/DevHelp";
+import Gallery from "./pages/Gallery/Gallery";
+import Home from "./pages/Home/Home";
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {

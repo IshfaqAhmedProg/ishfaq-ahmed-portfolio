@@ -1,0 +1,50 @@
+@import "../../style/index";
+.workedwith {
+  &-section {
+    margin-top:15vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  &-title {
+    h1 {
+      @include heading1;
+      @include textgradient(var(--heading-color));
+      opacity: 0.8;
+      text-align: right;
+
+    }
+  }
+  &-list {
+    @include displayflex(row,space-around,center);
+    &-element {
+      position: relative;
+      .companylogo {
+        &-bw {
+          @include absoluteP;
+          transition: opacity 50ms ease;
+          &:hover {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+  /*-----------MEDIA QUERIES--------------------*/
+  @media screen and (max-width: 1200px) {
+    &-section {
+      grid-template-columns: 1fr;
+    }
+    &-title{
+      h1{
+        text-align: center;
+      }
+    }
+    &-list {
+      flex-direction: column;
+      padding-top: 5rem;
+      &-element {
+        margin-block: 2rem;
+      }
+    }
+  }
+}
