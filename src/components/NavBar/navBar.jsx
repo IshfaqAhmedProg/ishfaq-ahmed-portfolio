@@ -4,8 +4,8 @@ import Images from "../Images";
 import HamburgerIcon from "./HamburgerIcon/hamburgerIcon";
 import DarkLightToggle from "./DarkLightToggle/DarkLightToggle";
 import { Link } from "react-router-dom";
-import Gallery from "../../Pages/Gallery/Gallery";
-import Home from "../../Pages/Home/Home";
+import Gallery from "../../pages/Gallery/Gallery";
+import Home from "../../pages/Home/Home";
 
 function Navbar() {
   return (
