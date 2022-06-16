@@ -1,5 +1,5 @@
 import React from "react";
-import Images from "../../components/Images";
+import Images from "../../../components/Images";
 import './WorkedWith.scss';
 function WorkedWith() {
   return (

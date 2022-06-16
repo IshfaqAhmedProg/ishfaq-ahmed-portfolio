@@ -1,4 +1,4 @@
-@import "../../style/index";
+@import "../../../style/index";
 .hero-section {
   // z-index: 10;
   display: flex;
@@ -11,16 +11,19 @@
 
   color: $white;
   text-transform: uppercase;
-  background: var(--lp-background), url("../../assets/images/LandingPage.webp");
+  background: var(--lp-background), url("../../../assets/images/LandingPage.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width:600px){
+    height: 50vh;
+  }
 
   &-container {
     padding-right: 20vw;
     padding-left: 5vw;
     @media screen and (max-width:550px) {
       padding-right: 0;
-      padding-left: 50vw;
+      padding-left: 10vw;
     }
   }
   &-title {
@@ -30,8 +33,6 @@
     line-height: 3.8125rem;
     letter-spacing: -0.07em;
     text-transform: uppercase;
-    min-width: 503px;
-    text-overflow: ellipsis;
     & span {
       color: var(--lp-color);
     }
@@ -40,13 +41,12 @@
     display: flex;
     align-content: flex-start;
     font-weight: 900;
-    font-size: max(3ch, 5vw);
+    font-size: max(2.5ch, 5vw);
     text-transform: uppercase;
     overflow: hidden;
     position: relative;
     height: 2ch;
-    min-width: 503px;
-    text-overflow: ellipsis;
+
     &-flip {
       list-style: none;
       padding: 0;

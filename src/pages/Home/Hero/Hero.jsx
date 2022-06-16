@@ -1,7 +1,5 @@
 import React from "react";
 import "./Hero.scss";
-import Images from "../../components/Images";
-var landingpagebg = {};
 function Hero() {
   return (
     <div className="hero-section">

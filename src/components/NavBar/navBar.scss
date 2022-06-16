@@ -8,7 +8,7 @@
 .navbar {
   &-container {
     z-index: 5;
-    @include displayflex(row,space-around);
+    @include displayflex(row, space-around);
     align-items: center;
     width: 100%;
     background: var(--foreground-color);
@@ -41,8 +41,8 @@
           @include textgradient(var(--heading-color));
           opacity: 0.8;
           transition: opacity 300ms ease;
-          &:hover{
-            opacity:1;
+          &:hover {
+            opacity: 1;
           }
         }
       }
@@ -60,9 +60,15 @@
     }
     &-logo {
       order: 2;
-      & img {
-        max-width: 80%;
-        height: auto;
+      & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+          width: 50%;
+          max-width: 100%;
+          height: auto;
+        }
       }
     }
     &-menu {
@@ -91,7 +97,7 @@
         }
       }
     }
-    &-toggle{
+    &-toggle {
       order: 1;
     }
     &-hamburger {
@@ -100,4 +106,3 @@
     }
   }
 }
-
