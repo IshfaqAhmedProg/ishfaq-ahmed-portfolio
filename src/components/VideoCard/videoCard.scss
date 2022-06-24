@@ -1,24 +1,57 @@
 @import "../../style/index";
 .videocard-container {
-  @include displayflex(column, center);
-  width: fit-content;
-  height: fit-content;
-  background: $white;
-  box-shadow: 0px 1px 26px -9px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  padding: 22px;
+  @include displayflex(column, center, center);
+  height: 100%;
   &-title {
-    display: flex;
-    justify-content: center;
+    margin: 1rem;
   }
   &-preview {
-    overflow: hidden;
-    background-color: black;
-    border-radius: 15px;
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 1rem;
   }
   &-list {
-    height: 326px;
+    height: 50%;
+    position: relative;
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    margin: 1rem;
     overflow-y: scroll;
-    width: fit-content;
+    &::before{
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 5;
+        box-shadow: inset 0px 0px 14px -7px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+.list-element {
+  @include displayflex(row, center, center);
+  border-radius: 1rem;
+  margin-block: 0.5rem 1rem;
+  margin-inline: 0.5rem;
+  background: var(--foreground-color);
+  height: 10vh;
+  
+  &-preview {
+    height: 80%;
+      width: 20%;
+      margin: 0.5rem;
+      border-radius: 1rem;
+      background: red;
+      overflow: hidden;
+    &-image {
+      width: 100%;
+    }
+  }
+  &-desc {
+    &-title{
+        @include heading4;
+    }
+
+    width: 80%;
+
   }
 }

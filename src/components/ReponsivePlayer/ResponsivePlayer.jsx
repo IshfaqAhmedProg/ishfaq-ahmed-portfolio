@@ -6,10 +6,10 @@ import "./ResponsivePlayer.scss";
 function ResponsivePlayer() {
   return (
     <div className="player-wrapper">
-     {/* <PlayerControls/> */}
+      {/* <PlayerControls/> */}
       <ReactPlayer
         className="react-player"
-        url='https://www.youtube.com/watch?v=AfxSRfGsDEg'
+        url="https://www.youtube.com/embed/cjamHzRPXFo"
         config={{ vimeo: { playerOptions: { background: true } } }}
         width="100%"
         height="100%"

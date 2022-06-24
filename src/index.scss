@@ -4,7 +4,7 @@ html{
 }
 :root {
   color-scheme: light;
-  --background-color:white;
+  --background-color:rgb(247, 247, 247);
   --foreground-color:white;
   --heading-color: linear-gradient(180deg, rgba(94, 96, 206,0.6) 0%, rgba(116, 0, 184,0.6) 100%);
   --paragraph-color: #5e60ce;
@@ -60,4 +60,35 @@ p {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+///------------------------------Scroll Bar------------------------------
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+  border-radius: 100vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin-block: 0.5em;
+  border-radius: 100vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  opacity: 0.5;
+  background: var(--lp-gradient); 
+  border-radius: 100vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--branding-gradient); 
+}
+@supports(scrollbar-color: var(--lp-color) var(--background-color)){
+  *{
+    scrollbar-color:var(--lp-color) var(--background-color) ;
+    scrollbar-width: thin;
+  }
+
 }

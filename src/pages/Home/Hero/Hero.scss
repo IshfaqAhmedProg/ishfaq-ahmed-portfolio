@@ -29,19 +29,22 @@
   &-title {
     display: flex;
     align-content: flex-end;
-    font-size:max(1.5ch, 3vw);
+    font-size:max(1em, 3vw);
     line-height: 3.8125rem;
     letter-spacing: -0.07em;
     text-transform: uppercase;
     & span {
       color: var(--lp-color);
     }
+    @media screen and (max-width:600px){
+      line-height: 1.5rem;
+    }
   }
   &-carousel {
     display: flex;
     align-content: flex-start;
     font-weight: 900;
-    font-size: max(2.5ch, 5vw);
+    font-size: max(1.5em, 5vw);
     text-transform: uppercase;
     overflow: hidden;
     position: relative;
